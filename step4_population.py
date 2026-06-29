@@ -60,6 +60,7 @@ def evolve():
     population_history = [population]
 
     for generation_number in range(total_generations):
+        print(f"Generation {generation_number}")
         offspring = make_offspring(population)
         parents_and_offspring = population + offspring
         population = select_survivors(parents_and_offspring)
